@@ -5,6 +5,7 @@ export const PROFILE_DATA = {
   email: "saikumarmekala00@gmail.com",
   phone: "(+91) 8096479541",
   location: "Hyderabad, India",
+  resumeLink: "https://drive.google.com/uc?export=download&id=1wDXvjPTxLv_2qn4GAb6vpBb_DI1nfmD3", // Replace YOUR_FILE_ID with your actual Google Drive file ID
   socials: {
     linkedin: "https://linkedin.com/in/sai-kumar-mekala",
     github: "https://github.com/saikumar9541",

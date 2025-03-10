@@ -12,13 +12,9 @@ export function HeroSection() {
   };
 
   const handleDownloadResume = () => {
-    const formattedName = PROFILE_DATA.name.replace(/\s+/g, '_');
-    const link = document.createElement("a");
-    link.href = `/${formattedName}.pdf`;
-    link.download = `${formattedName}_Resume.pdf`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // Replace GOOGLE_DRIVE_FILE_ID with your actual file ID
+    const fileId = PROFILE_DATA.resumeLink;
+    window.open(fileId, '_blank');
   };
 
   return (

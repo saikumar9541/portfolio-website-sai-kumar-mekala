@@ -1,11 +1,11 @@
 export const PROFILE_DATA = {
   name: "Sai Kumar Mekala",
   role: "Full Stack Developer",
-  bio: "Passionate Full Stack Developer with 2+ years of experience in building scalable web applications. Strong expertise in React.js, Node.js, and cloud technologies. Committed to delivering high-quality code and excellent user experiences.",
+  bio: "Passionate Full Stack Developer with 2+ years of experience in building scalable web applications. Strong expertise in React.js, Node.js, Next.js, python and cloud technologies. Committed to delivering high-quality code and excellent user experiences.",
   email: "saikumarmekala00@gmail.com",
   phone: "(+91) 8096479541",
   location: "Hyderabad, India",
-  resumeLink: "https://drive.google.com/uc?export=download&id=1wDXvjPTxLv_2qn4GAb6vpBb_DI1nfmD3", // Replace YOUR_FILE_ID with your actual Google Drive file ID
+  resumeLink: "https://drive.google.com/uc?export=download&id=1wDXvjPTxLv_2qn4GAb6vpBb_DI1nfmD3",
   socials: {
     linkedin: "https://linkedin.com/in/sai-kumar-mekala",
     github: "https://github.com/saikumar9541",

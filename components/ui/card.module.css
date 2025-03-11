@@ -1,0 +1,62 @@
+.glossyCard {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.glossyCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: 0.5s ease;
+}
+
+.glossyCard:hover::before {
+  left: 100%;
+}
+
+.glossyCard::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    transparent 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.glossyCard:hover::after {
+  opacity: 1;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.05),
+                0 0 10px rgba(255, 255, 255, 0.05);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1),
+                0 0 20px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.glossyCard:hover {
+  transform: translateY(-2px);
+  animation: glow 1.5s ease-in-out infinite alternate;
+  background: rgba(255, 255, 255, 0.08) !important;
+} 

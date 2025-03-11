@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import { cn } from '@/lib/utils';
+import styles from './card.module.css';
 
 const Card = React.forwardRef<
   HTMLDivElement,
@@ -10,6 +11,7 @@ const Card = React.forwardRef<
     ref={ref}
     className={cn(
       'rounded-lg border bg-card text-card-foreground shadow-sm',
+      styles.glossyCard,
       className
     )}
     {...props}
